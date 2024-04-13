@@ -6,4 +6,4 @@ find_package(Rendering REQUIRED)
 
 include_directories( ${CAD_ROOT_DIR}/DGERendering/include)
 
-add_subdirectory(one)
+add_subdirectory(1.getting_started)

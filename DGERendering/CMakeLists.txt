@@ -15,9 +15,9 @@ add_library(Rendering STATIC ${_Rendering_SourceDir}
 )
 target_link_libraries(Rendering PUBLIC stb_image imgui)
 
-target_compile_definitions(${PROJECT_NAME} PUBLIC SHADER_DIR="${CAD_ROOT_DIR}/resource/shader/")
-target_compile_definitions(${PROJECT_NAME} PUBLIC TEXTURE_DIR="${CAD_ROOT_DIR}/resource/texture/")
-target_compile_definitions(${PROJECT_NAME} PUBLIC MODEL_DIR="${CAD_ROOT_DIR}/resource/model/")
+target_compile_definitions(${PROJECT_NAME} PUBLIC SHADER_DIR="${CAD_ROOT_DIR}/resource_/shader/")
+target_compile_definitions(${PROJECT_NAME} PUBLIC TEXTURE_DIR="${CAD_ROOT_DIR}/resource_/texture/")
+target_compile_definitions(${PROJECT_NAME} PUBLIC MODEL_DIR="${CAD_ROOT_DIR}/resource_/model/")
 target_link_libraries(${PROJECT_NAME} PRIVATE assimp-vc142-mtd)
 
 
