@@ -13,8 +13,12 @@ include_directories( ${PROJECT_SOURCE_DIR}/External/)
 include_directories( ${PROJECT_SOURCE_DIR}/External/imgui)
 include_directories( ${PROJECT_SOURCE_DIR}/External/glfw/include)
 include_directories( ${PROJECT_SOURCE_DIR}/External/glad/include)
+include_directories(includes)
 #库目录
 link_directories(${PROJECT_SOURCE_DIR}/External/glfw/lib-vc2010-64)
 link_directories(${PROJECT_SOURCE_DIR}/External/assimp)
+
+configure_file(configuration/root_directory.h.in configuration/root_directory.h)
+include_directories(${CMAKE_BINARY_DIR}/configuration)
 
 add_subdirectory(Example)
